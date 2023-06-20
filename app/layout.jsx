@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Providers } from "./providers";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -11,11 +12,11 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <main>
+        <Providers>
           <Navbar />
           {children}
           <Footer />
-        </main>
+        </Providers>
       </body>
     </html>
   );
